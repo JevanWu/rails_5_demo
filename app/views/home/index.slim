@@ -1,0 +1,8 @@
+- if current_user.present?
+  = current_user.email
+- else
+  = link_to "sign in", new_user_session_path
+  br
+  = link_to "sign up", new_user_registration_path
+h1
+  | hello world
